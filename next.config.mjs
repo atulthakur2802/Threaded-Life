@@ -18,8 +18,16 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
     ],
   },
+  // Ensure proper trailing slash handling for Vercel
+  trailingSlash: false,
+  // Enable standalone output for Vercel
+  output: 'standalone',
 };
 
 export default nextConfig;
