@@ -23,11 +23,12 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
+    unoptimized: false,
   },
   // Ensure proper trailing slash handling for Vercel
   trailingSlash: false,
-  // Enable standalone output for Vercel
-  output: 'standalone',
+  // Remove standalone output for Vercel (Vercel handles this)
+  // output: 'standalone',
 };
 
 export default nextConfig;
